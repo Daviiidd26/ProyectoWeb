@@ -1,171 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>NOVA-TENDENCIA</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--Estilos--> 
+    <title>Nova Tendecincia | Inicio</title>
+  <!--ESTILOS-->
+    <link rel= "stylesheet" href="css/estilos.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Raleway: ital, wght @ 1,500 & display = intercambiar "rel =" hoja de estilo ">
    
-   <link rel=”stylesheet” type=”text/css” href="CSS/estilos.css">
-   <link rel = "preconnect" href = "https://fonts.gstatic.com">
-   <link href = "https://fonts.googleapis.com/css2? family = Open + Sans & display = swap" rel = "hoja de estilo">
 </head>
-<body>
-    <!--Menu de navegacion-->
-    <header id="header">
+<body onload="cargarUser()">
 
-   <nav class="menu">
+    <!-- SCRIPT -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"></script>
+  
+    <script src="https://kit.fontawesome.com/077e8de049.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    
+   
 
-    <div class="logo-box">
-        <h1><a href="#">Nova Tendencia</a></h1>
-		
-        <span class="logochico"><i class="fas fa-align-justify"></i></span> <!--icono por rutear bien-->
-    </div>
-
-    <div class="contendor">
+ <!-- Menu de Navegacion -->
+ <header id="header">
+    <nav class="menu">
+     <div class="logo-box">
+       <h1><a href="#">Nova Tendencia</a></h1>
+       <span  class="btn-menu" onclick="mostrarMenu()"><i class="fas fa-bars"></i></span> <!--FUNCION PARA MOSTRAR MENU UNA VEZ ACHICADA LA PG WEB-->
+     </div>
+     
+     <div class="list-contenedor" id="sandwich">
         <ul class="lista">
-            <li><a href="#" class="activo">Inicio</a></li>
-            <li><a href="#">Salón de Belleza</a></li>
-            <li><a href="#">Peluquería</a></li>
-            <li><a href="#">Estética</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>       
-    </div>
-    <!--IMG Header-->
-    <div class="img_header">
-        <div class="Bienvenidos">
-            <h1>Bienvenidos a NOVA-TENDENCIA</h1>
-            <hr>
-            <p>Centro de Belleza y Estética</p>
-            <button id="abajo">Ver final</button></button>
-        </div>
+            <li><a href="index.html" class="activo">Inicio</a></li>
+            <li><a href="index1.html">Nosotros</a></li>
+            <li><a href="index2.html">Peluqueria</a></li>
+            <li><a href="index3.html">Estetica</a></li>
+            <li><a href="index4.html">Contacto</a></li>
+            <li><a href="index5.html" >Diagramas</a></li>
+            
+            
+            
 
+        </ul>
+     </div>
+    </nav>
+ 
+    <!-- Imagen Header -->
+    <div class="img-header">
+     <div class="bienvenidos">
+       <h1>Bienvenid@s | Nova Tendencia Y Estilo</h1>
+       <hr>
+       <p>Salon de Belleza y Estetica</p>
+       <button id="arriba" ><a href="#abajo">Ver abajo</a></button>
+     </div>       
     </div>
-   </nav>
+    
+    
 
     </header>
-        <!--Menu de navegacion-->
 
+ <main>
 
-    <main>
-        <!--Acerca de nosotros-->
+    <!-- Acerca de nosotros -->
+    <section class="acerca-de">
+    <div class="info-contenedor">
+      <h1>Acerca de Nosotros</h1>
+      <p>En Nova Tendencia hemos creado para ti un acogedor espacio donde podrás disfrutar de tiempo para ti misma. Un espacio ameno y confortable en el que por unos instantes pensarás que el tiempo se ha parado. Disfruta de los mejores servicios de peluquería y estética en nuestro salón de belleza en Villanueva Del Arzobispo(Jaen).</p>
+      <p>En nuestro de salón podrás disfrutar de la percepción de un trato bueno y agradable. Los valores que sustentan nuestra empresa son la profesionalidad y calidad. Nuestro objetivo es ofrecer un trabajo personalizado y adaptado a sus necesidades.</p>
+      <div class="sobre-galeria">
+        <img src="img/ZONA DE TRABAJO_2.jpg" alt="">
+        <img src="img/fondo2.jpg" alt="">
+        <img src="img/SALA ESPERA_2.jpg" alt="">
+      </div>
 
-        <section class="acerca de">
-
-            <div class="Info_contendor">
-                <h1>Acerca de NOSOTROS</h1>
-                <p>hh</p>         <!--Texto de acerca de la peluqueria-->
-                <p>hh</p>
-
-
-                <div class="sobre-galeria">
-                    <img src="FOTOS/NUESTRO_SALON/RECIBIDOR_2.jpg" alt="">     <!--Rutear bien las fotos-->
-                    <img src="FOTOS/NUESTRO_SALON/SALA ESPERA_2.jpg" alt="">
-                    <img src="FOTOS/PORTADAS_MINI_PRINCIPAL/TIJERAS.jpg" alt="">
-                </div>
-                                                                    <!--<div class="acerca de más"><button>TRABAJOS REALIZADOS</button></div>-->
-                                                                    <!--DUDA DE SI PONER UN BOTON POR EL TEMA DEL CONTENIDO ("LEER MAS")-->
-        
-            </div>
-            
-        </section>
-
-        <!--Nuestros trabajos-->
-        <section class="Nuestros trabajos">
-
-            <div class="deg-background"></div>
-
-
-            <div class="ejeZproject">
-                <div class="contenedor-proyecto"></div>
-
-                    <div class="proyecto-titulo">
-                        <h2>Nuestros Trabajos</h2>
-                        <hr>
-                    </div>
-
-                    <div class="proyecto-img">
-                        <img src="FOTOS/PEINADOS_MUJERES/RECOGIDOS/PEINADOS5.jpg" alt="">
-                        <img src="FOTOS/PEINADOS_MUJERES/RECOGIDOS/PEINADOS9.jpg" alt="">
-                        <img src="FOTOS/PEINADOS_MUJERES/RECOGIDOS/PEINADOS2.jpg" alt="">
-                        <img src="FOTOS/PEINADOS_MUJERES/PEINADOS_LISOS\PEINADO3.jpg" alt="">
-                        <img src="FOTOS/PEINADOS_MUJERES/PEINADOS_LISOS/PEINADO6.jpg" alt="">
-                        <img src="FOTOS/PEINADOS_MUJERES/PEINADOS_LISOS/PEINADOS17.jpg" alt="">
-                        
-                         <!--Aqui adentro iran todas la imagenes de los trabajos realizados en la peqluqueria-->
-                    </div>
-         
-         
-                </div>
-
-        </section>
-
-        <!--Testimonios-->
-        <section class="testimonios">
-            <div class="testimonios-titulo">
-                <h2>Testimonios</h2>
-                <hr>
-            </div>
-
-
-            <div class="box-testimonios">
-
-
-                <div class="tajetas-testimonios">
-                    <div class="tarjetas-img"><img src="FOTOS\PERSONAS\persona5.jpg" alt=""></div>   <!--Buscar imagen de un persona-->
-                    <div class="testimonio-text">
-                        <h4>Luis Del Arco</h4>
-                        <p>Profesionales y buen trato con el personal. Hacen trabajos muy buenos. Lo recomiendo totalmente</p> <!--Buscar testimonio acerca de la peluqueria-->
-                    </div>
-                </div>
-
-                <div class="card-testimonios">
-                    <div class="card-img"><img src="FOTOS\PERSONAS\persona2.jpg" alt=""></div> <!--Buscar imagen de un persona-->
-                    <div class="testimonio-text">
-                        <h4>Isabel MaríÍa Torres Hidalgo</h4>
-                        <p>Preciosa peluquería, muy buen trato con las clientas, recomendable 100%</p> <!--Buscar testimonio acerca de la peluqueria-->
-                    </div>
-                </div>
-
-
-                <div class="card-testimonios">
-                    <div class="card-img"><img src="FOTOS\PERSONAS\persona3.jpg" alt=""></div> <!--Buscar imagen de un persona-->
-                    <div class="testimonio-text">
-                        <h4>Sara María Bueno Romero</h4>
-                        <p>Excelente atención y resultados increíbles, sin duda toda una profesional que no solo sabe captar lo que quieres sino que lo ejecuta de forma extraordinaria</p> <!--Buscar testimonio acerca de la peluqueria-->
-                    </div>
-                </div>
-
-
-                <div class="card-testimonios">
-                    <div class="card-img"><img src="FOTOS\PERSONAS\persona4.jpg" alt=""></div> <!--Buscar imagen de un persona-->
-                    <div class="testimonio-text">
-                        <h4>Carlos gallardo ojeda</h4>
-                        <p>PROFESIONAL,MUY AGRADABLE Y UN TRATO INMEJORABLE</p> <!--Buscar testimonio acerca de la peluqueria-->
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <!--Footer-->
-    <div class="footer-text">
-        <p>&copy; Nova Tendencia <i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i class="far fa-envelope"></i><i class="fas fa-phone"></i> </p> 
-        
-
+    
     </div>
-    
+    </section>
 
+   <!-- Nuestros proyectos -->
+   <section class="nuestros-proyectos">
+      <div class="ir-arriba"></div>
+   <div class="deg-background"></div>   
+   
+   <div class="ejeZproject"> <!--CONTENIDO DE LOS IMAGENES-->
+      <div class="proyectos-contenedor">
+        <div class="proyectos-titulo">
+          <h2>Nuestros Proyectos</h2>
+          <hr>
+        </div>
+          <div class="proyectos-img">
+            <img src="img/PL1.jpg" alt="">
+            <img src="img/PL2.jpg" alt="">
+            <img src="img/PL3.jpg" alt="">
+            <img src="img/PL4.jpg" alt="">
+            <img src="img/PL5.jpg" alt="">
+            <img src="img/RECO1.jpg" alt="">
+            <img src="img/RECO2.jpg" alt="">
+            <img src="img/RECO3.jpg" alt="">
+            <img src="img/RECO4.jpg" alt="">
+            <img src="img/RECO5.jpg" alt="">
+         </div>
+   <div class="ir-abajo"></div>
+   </section>
 
+   <!-- Testimonios -->
+   <section class="testimonios">
+    <div class="testimonios-titulo">
+     <h2>Testimonios</h2>
+     <hr>
+    </div>
 
-    <!--script-->
-    <script>"JAVA/app.js"</script>
-    <script src="https://kit.fontawesome.com/077e8de049.js" crossorigin="anonymous"></script>
+     <div class="caja-testimonio">
+      <div class="tarjeta-testimonio">
+        <div class="tarjeta-img"><img src="img/persona1.jpg" alt=""></div>
+        <div class="testimonio-text">
+        <h4>Rosa Yeste Martinez</h4>
+        <p>"La recomiendo 100×100,muy Bonita, muy confortable y el servicio de 10....."</p>
+        </div>
+      </div>
 
-    
-</body>
+      <div class="caja-testimonio">
+          <div class="tarjeta-testimonio">
+          <div class="tarjeta-img"><img src="img/persona2.jpg" alt=""></div>
+          <div class="testimonio-text">
+          <h4>Sara María Bueno Romero</h4>
+          <p>"Excelente atención y resultados increíbles, sin duda toda una profesional que no solo sabe captar lo que quieres sino que lo ejecuta de forma extraordinaria"</p>
+          </div>
+        </div>
+
+        <div class="caja-testimonio">
+            <div class="tarjeta-testimonio">  
+            <div class="tarjeta-img"><img src="img/persona4.jpg" alt=""></div>
+            <div class="testimonio-text">
+            <h4>Juan jose villanueva</h4>
+            <p>"Increíble el corte de pelo, creía que no tenía solución, pero bajo todo pronostico, la cosa fue espectacular. Recomendable 100%."</p>
+            </div>
+          </div>
+
+          <div class="caja-testimonio">
+              <div class="tarjeta-testimonio">
+              <div class="tarjeta-img"><img src="img/persona5.jpg" alt=""></div>
+              <div class="testimonio-text">
+              <h4>Luis del Arco</h4>
+              <p>"Profesionales y buen trato con el personal. Hacen trabajos muy buenos. Lo recomiendo totalmente"</p>
+              </div>
+            </div>
+
+            </div>
+   </section>
+
+ </main> 
+
+ <!--FOOTER-->
+ <footer>
+  
+  <div class="footer-contenido">
+      <h3>Nova Tendencia</h3>
+      <p>Nuestra mejor propina es verte satisfecho con nuestro trabajo</p>
+      <ul class="social">
+          <li><a target="_blank" href="https://www.facebook.com/NoVa-Tendencia-522944954549732/"><i class="fab fa-facebook fa-2x"></i></a></li>
+          <li><a target="_blank" href="https://www.google.es/search?q=novatendencia+villanueva+del+arzobispo&safe=strict&sxsrf=ALeKk02zZfzmo0F9J12EVDp3nj7EDjQYLQ%3A1621347458185&source=hp&ei=gsyjYNiDCO-NlwT-q7i4Cg&iflsig=AINFCbYAAAAAYKPakgZHkUA3qc1prepwU9EQccJdU9nC&oq=novatendencia+villanueva+del+arzobispo&gs_lcp=Cgdnd3Mtd2l6EAMyBwghEAoQoAE6BwgjEOoCECc6BAgjECc6CwgAELEDEMcBEKMCOggIABCxAxCDAToICC4QsQMQgwE6AggAOgIILjoFCAAQsQM6BQguELEDOggIABDHARCvAToECAAQCjoECAAQHjoGCAAQChAeOgIIJjoGCAAQDRAeOggIABAWEAoQHlD8Hlj8mQFg1ZsBaANwAHgBgAGVCIgB42ySAQ8wLjQuNS4xLjIuNy43LjGYAQCgAQGqAQdnd3Mtd2l6sAEK&sclient=gws-wiz&ved=0ahUKEwjYzLL6tdPwAhXvxoUKHf4VDqcQ4dUDCAk&uact=5"><i class="fab fa-google-plus-g fa-2x"></i></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/nova_tendencia_tu_pelu/"><i class="fab fa-instagram"></i></a></li>
+          <li><a target="_blank" href="https://www.google.es/search?safe=strict&sxsrf=ALeKk01Hu0Y1_I6-aQcAJg3KpOerjjEmfQ:1621347479537&q=nova+tendencia+villanueva+del+arzobispo+tel%C3%A9fono&ludocid=12598391522257384565&sa=X&ved=2ahUKEwjz1cyEttPwAhWxgVwKHaA2CDQQ6BMwJXoECCcQAg&biw=1366&bih=657"><i class="fas fa-phone"></i></a></li>
+
+      </ul>
+      <!--INICIO DE REGISTRO DE FORMULARIO-->
+      <div id="Entrada-izq">
+        <form id="login" name="formulario" onsubmit="return validarXML()">
+          <label for="familiaUsuario"> usuario </label>
+          <input id="input" type="text" name="usuario" maxlength="10" required> 
+          <label for="familiaContraseña"> contraseña </label>
+          <input id="input"type="text" name="contraseña" maxlength="10" required>
+          <input id="input" type="submit" value="Inicie Sesion" >
+        </form>
+        <div id="mensajeLogin">
+            <p>Bienvenid@ <span id="aqui"></span></p>
+            <input id="input" type="button" value="Salir" onclick="borraUsr()">
+        </div>
+    </div>
+      <!--INICIO DE SESION DE RESGISTRO DEL FORMULARIO-->
+    </div>
+
+    <div class="footer-bottom">
+        <p>copyright  &copy;2021.<span>Salon De Belleza</span></p>
+        <div class="ver-final">
+          <button id="abajo"><a href="#arriba">Ver arriba</a></button> <!--BOTON PARA IR HACIA ARRIBA-->
+        </div>
+   
+      </div>  
+
+    </footer>
+
+  </body>
+
 </html>
